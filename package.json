@@ -30,7 +30,7 @@
     "url": "https://github.com/MattiasFestin/sym-fnassert.git"
   },
   "keywords": [
-    "function annotation"
+    "function assertion"
   ],
   "author": "Mattias Festin",
   "license": "MIT"
