@@ -64,7 +64,7 @@ describe('#fnassert', function () {
 					arg2 = {constructor: {name: 'someType'}},
 					arg3 = {constructor: {name: undefined}},
 					name = 'argName',
-					acceptArrayAnnotation = undefined;
+					acceptArrayAnnotation;
 				(function () {
 					fnassert.assertArgFn(arg, name, acceptArrayAnnotation);
 				}).should.throw('Argument \'' + name + '\' is not a function, got number');
@@ -98,7 +98,7 @@ describe('#fnassert', function () {
 			it('should return argument if acceptArrayAnnotation = undefined', function () {
 				var arg = function () {},
 					name = 'argName',
-					acceptArrayAnnotation = undefined;
+					acceptArrayAnnotation;
 				
 				fnassert.assertArgFn(arg, name, acceptArrayAnnotation).should.equal(arg);
 			});
